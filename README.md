@@ -1,5 +1,10 @@
 # short-drama-pipeline 短剧流水线
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3](https://img.shields.io/badge/Python-3-blue.svg)](https://www.python.org/)
+[![零依赖](https://img.shields.io/badge/依赖-纯标准库-brightgreen.svg)](#技术栈)
+[![Skill 数](https://img.shields.io/badge/Skills-3-orange.svg)](#三个-skill-的关系)
+
 一套**规则库驱动的短剧/影视内容生产流水线**，把「存量 IP 改编 → 剧本 → 分镜 → 成片」的完整链路工程化。三层 skill 各司其职、接口对齐，全部遵循「规则库 + 可执行工具链 + 开源三件套」的同一套设计规范。
 
 ## 三个 skill 的关系
