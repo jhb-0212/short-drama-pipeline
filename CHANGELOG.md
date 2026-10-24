@@ -89,7 +89,7 @@
   - `storyboard-format.md`：新增「字段 ↔ JSON key 映射」表，澄清表格版 11 字段（人看）与 JSON schema（脚本消费）的对应关系。
   - `tools/README.md`：检查码数字「C1~C11」→「C1~C12」；示例时长对齐。
 
-### ip-jieshuo-pipeline（成片层）
+### ip-jieshuo-pipeline（制作层·赛道③解说）
 
 #### Fixed（修复）
 
@@ -107,7 +107,7 @@
 
 #### Added（新增）
 
-- **三 skill 合并为单一仓库**：`ip-script-pipeline`（剧本层）、`ip-make-pipeline`（制作层）、`ip-jieshuo-pipeline`（成片层）合并为 `short-drama-pipeline` 父项目，统一版本管理与分发。
+- **三 skill 合并为单一仓库**：`ip-script-pipeline`（剧本层）、`ip-make-pipeline`（制作层·赛道①②分镜）、`ip-jieshuo-pipeline`（制作层·赛道③解说）合并为 `short-drama-pipeline` 父项目，统一版本管理与分发。
 - **顶层 README**：三 skill 关系图 + 三赛道分流表 + 三条共同承诺 + 快速上手导航。
 - **顶层 LICENSE（MIT）+ .gitignore**：与三个子 skill 的许可、忽略规则对齐。
 
@@ -143,7 +143,7 @@
 
 - 用《跨界追夫》第 1 集（12 镜）真实跑通全链路：`validate` → `prompt_build` → `gate` → `board`。
 
-### ip-jieshuo-pipeline（成片层）
+### ip-jieshuo-pipeline（制作层·赛道③解说）
 
 #### Added（新增）
 

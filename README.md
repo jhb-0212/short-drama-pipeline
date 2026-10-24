@@ -19,18 +19,18 @@
                                    │ 赛道③解说叙事 → 解说稿 package
                  ┌─────────────────┴─────────────────┐
                  ▼                                   ▼
-   ┌──────────────────────────┐        ┌──────────────────────────┐
-   │  ip-make-pipeline（制作层）│        │ ip-jieshuo-pipeline（成片）│
-   │  分镜 → 成片（七段式提示词） │        │ 旁白稿 → 成片（两段式提示词）│
-   │  防换脸 + 跨集一致性       │        │ 素材匹配 + 段落对齐        │
-   └──────────────────────────┘        └──────────────────────────┘
+   ┌──────────────────────────┐        ┌──────────────────────────────┐
+   │  ip-make-pipeline（制作层）│        │ ip-jieshuo-pipeline（制作层）  │
+   │  赛道①②·分镜 → 成片       │        │ 赛道③·旁白稿 → 素材剪辑成片     │
+   │  七段式提示词 + 防换脸     │        │ 两段式提示词 + 段落对齐         │
+   └──────────────────────────┘        └──────────────────────────────┘
 ```
 
 | Skill | 层 | 一句话定位 | 消费 | 产出 |
 |---|---|---|---|---|
 | `ip-script-pipeline` | 剧本层 | 「讲什么」——存量 IP → 能过审的剧本 | 存量网文 IP | 三件套（简介单/定妆单/资产清单）+ 剧本 + 解说稿 |
 | `ip-make-pipeline` | 制作层 | 「怎么拍」——剧本 → 分镜 → 成片提示词 | 三件套 + 剧本 | 分镜表 + 七段式提示词 + 离线看板 |
-| `ip-jieshuo-pipeline` | 成片层 | 「怎么说」——解说稿 → 素材剪辑成片 | 解说稿 package | 素材匹配表 + 两段式提示词 + SRT + 解说看板 |
+| `ip-jieshuo-pipeline` | 制作层（赛道③·解说） | 「怎么说」——解说稿 → 素材剪辑成片 | 解说稿 package | 素材匹配表 + 两段式提示词 + SRT + 解说看板 |
 
 ## 三赛道如何分流
 
@@ -52,7 +52,7 @@
 short-drama-pipeline/
 ├── ip-script-pipeline/   # 剧本层：六阶段编剧链 + 三赛道分流
 ├── ip-make-pipeline/     # 制作层：分镜 + 资产 + 跨集一致性 + 七段式提示词 + 看板
-├── ip-jieshuo-pipeline/  # 成片层：解说稿 → 素材匹配 → 两段式提示词 → 字幕/看板
+├── ip-jieshuo-pipeline/  # 制作层（赛道③·解说）：解说稿 → 素材匹配 → 两段式提示词 → 字幕/看板
 └── README.md             # 本文件（总览）
 ```
 
@@ -61,8 +61,8 @@ short-drama-pipeline/
 每个 skill 都有自己的 README，含完整的安装与命令行说明：
 
 - 剧本层：[`ip-script-pipeline/README.md`](ip-script-pipeline/README.md)
-- 制作层：[`ip-make-pipeline/README.md`](ip-make-pipeline/README.md)
-- 成片层：[`ip-jieshuo-pipeline/README.md`](ip-jieshuo-pipeline/README.md)
+- 制作层（赛道①②·分镜）：[`ip-make-pipeline/README.md`](ip-make-pipeline/README.md)
+- 制作层（赛道③·解说）：[`ip-jieshuo-pipeline/README.md`](ip-jieshuo-pipeline/README.md)
 
 **典型完整链路**（国内剧）：
 

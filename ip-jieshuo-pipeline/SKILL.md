@@ -1,6 +1,6 @@
 ---
 name: ip-jieshuo-pipeline
-description: 解说叙事「旁白稿 → 成片」制作层流水线。消费 ip-script-pipeline 赛道③产出的解说稿 package（旁白稿 VO Script / 画面提示表 / 字幕稿 / 考据来源），产出素材匹配表、成片提示词、字幕 SRT，并输出离线解说看板（单文件 HTML + SRT 字幕 / 剪辑时间线 CSV）。与 ip-make-pipeline（分镜流水线）平行——解说类走素材剪辑，不做分镜。触发词：解说成片、解说稿制作、旁白稿成片、VO脚本、素材匹配、解说字幕、历史解说、科普解说、事件战役解说、解说看板。
+description: 解说叙事「旁白稿 → 成片」制作层流水线（赛道③·解说，与 ip-make-pipeline 平行）。消费 ip-script-pipeline 赛道③产出的解说稿 package（旁白稿 VO Script / 画面提示表 / 字幕稿 / 考据来源），产出素材匹配表、成片提示词、字幕 SRT，并输出离线解说看板（单文件 HTML + SRT 字幕 / 剪辑时间线 CSV）。与 ip-make-pipeline（分镜流水线）平行——解说类走素材剪辑，不做分镜。触发词：解说成片、解说稿制作、旁白稿成片、VO脚本、素材匹配、解说字幕、历史解说、科普解说、事件战役解说、解说看板。
 agent_created: true
 ---
 
