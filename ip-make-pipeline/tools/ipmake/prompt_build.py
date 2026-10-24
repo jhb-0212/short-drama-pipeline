@@ -36,8 +36,10 @@ def build_prompt(shot, assets, staging, style, language="zh"):
         if en else "柔和正面补光，无光斑；若有人物，严格复用定妆单面部特征，不换脸；无绝对化功效表述"
     )
     # 组装成顺序字符串：【段名】内容 →【段名】内容 → …
+    # 七段段名始终输出（内容可为空），保证下游 gate 闸门3 能逐段核对「七段齐全」。
+    # 站位声明段在无多人戏时内容为空，但段名仍保留，避免被误判为「缺段」。
     order = ["画风风格", "场景资产", "核心人物", "站位声明", "时间轴分镜", "音效", "强制禁止项"]
-    return " → ".join(f"【{k}】{segs[k]}" for k in order if segs.get(k))
+    return " → ".join(f"【{k}】{segs.get(k, '')}" for k in order)
 
 
 def main():

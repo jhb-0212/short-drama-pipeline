@@ -59,7 +59,7 @@
 ```json
 {
   "title": "《跨界追夫》第1集 分镜表",
-  "target_duration": 90,
+  "target_duration": 53,
   "total": { "shots": 12, "duration": 53 },
   "staging": "S03 营地，梁大背对冰湖站中央，梁小在其右手",
   "style": {

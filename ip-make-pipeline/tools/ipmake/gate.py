@@ -6,7 +6,7 @@ ip-make-pipeline 投喂层闸门（gate）
 防止把「未绑定资产、未锁站位、缺提示词」的半成品投进去浪费算力。
 
 用法：
-    python gate.py storyboard.json prompt.json
+    python gate.py storyboard.json prompt.json [validate_report.json]
 """
 
 import json
@@ -33,13 +33,20 @@ def gate_2_staging_locked(storyboard):
 
 
 def gate_3_prompt_built(prompts):
-    """闸门3：提示词已组装（七段式齐全）"""
+    """闸门3：提示词已组装（七段式齐全）
+
+    七段（对齐 prompt_build.py 的 order）：画风风格/场景资产/核心人物/站位声明/时间轴分镜/音效/强制禁止项。
+    站位声明段在无多人戏时可空、音效段恒有默认值，但七段段名都应出现（即便内容为空也保留段名，便于下游核对）。
+    """
     if not prompts:
         return False, "缺成片提示词"
+    SEGS = ("画风风格", "场景资产", "核心人物", "站位声明", "时间轴分镜", "音效", "强制禁止项")
     for p in prompts:
-        for seg in ("画风风格", "场景资产", "核心人物", "时间轴分镜", "强制禁止项"):
-            if seg not in str(p):
-                return False, f"提示词缺【{seg}】段"
+        # 精确读 prompt 字段（而非 str(p) 隐式序列化），避免误判
+        txt = p.get("prompt", "") if isinstance(p, dict) else str(p)
+        for seg in SEGS:
+            if seg not in txt:
+                return False, f"提示词 {p.get('shot_id') if isinstance(p, dict) else ''} 缺【{seg}】段"
     return True, ""
 
 
