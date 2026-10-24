@@ -1,0 +1,54 @@
+{
+  "title": "他活了83岁，却只被记住最后10秒",
+  "type": "历史人物志",
+  "duration": 60,
+  "rate": 5.0,
+  "aspect": "16:9",
+  "segments": [
+    {
+      "id": "V01",
+      "role": "钩子",
+      "narration": "他活了83岁，却只被记住最后10秒。",
+      "chars": 16,
+      "visual_hint": "老照片/画像 + 定格",
+      "subtitle_main": "他活了83岁，却只被记住最后10秒。",
+      "subtitle_emph": "最后10秒"
+    },
+    {
+      "id": "V02",
+      "role": "背景",
+      "narration": "他叫沃尔特，一个在美国中西部度过大半生的普通人。",
+      "chars": 22,
+      "visual_hint": "史料影像/地图",
+      "subtitle_main": "他叫沃尔特，一个在美国中西部度过大半生的普通人。",
+      "subtitle_emph": ""
+    },
+    {
+      "id": "V03",
+      "role": "主体",
+      "narration": "从工厂工人到社区领袖，他用了五十年。",
+      "chars": 16,
+      "visual_hint": "时间线动画/实物图",
+      "subtitle_main": "从工厂工人到社区领袖，他用了五十年。",
+      "subtitle_emph": "五十年"
+    },
+    {
+      "id": "V04",
+      "role": "高潮",
+      "narration": "可真正让他被世界看见的，是生命最后的十秒钟。",
+      "chars": 20,
+      "visual_hint": "定格 + 慢放",
+      "subtitle_main": "可真正让他被世界看见的，是生命最后的十秒钟。",
+      "subtitle_emph": "十秒钟"
+    },
+    {
+      "id": "V05",
+      "role": "落点",
+      "narration": "人生的重量，从来不由长度决定，而由那一刻决定。",
+      "chars": 20,
+      "visual_hint": "渐暗 + 金句定格",
+      "subtitle_main": "人生的重量，从来不由长度决定，而由那一刻决定。",
+      "subtitle_emph": "由那一刻决定"
+    }
+  ]
+}

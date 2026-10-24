@@ -1,0 +1,41 @@
+{
+  "title": "他活了83岁，却只被记住最后10秒",
+  "source": "混搭",
+  "segments": [
+    {
+      "id": "V01",
+      "asset_dir": "老照片/画像",
+      "asset_src": "历史影像",
+      "copyright": "需授权",
+      "license_note": "XX州立档案馆藏，需购买授权"
+    },
+    {
+      "id": "V02",
+      "asset_dir": "史料影像/地图",
+      "asset_src": "历史影像",
+      "copyright": "公共领域",
+      "license_note": ""
+    },
+    {
+      "id": "V03",
+      "asset_dir": "时间线动画/实物图",
+      "asset_src": "图文动画",
+      "copyright": "自摄",
+      "license_note": ""
+    },
+    {
+      "id": "V04",
+      "asset_dir": "定格 + 慢放",
+      "asset_src": "历史影像",
+      "copyright": "需授权",
+      "license_note": "纪录片素材，已购买授权"
+    },
+    {
+      "id": "V05",
+      "asset_dir": "渐暗 + 金句定格",
+      "asset_src": "图文动画",
+      "copyright": "自摄",
+      "license_note": ""
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# 工具链运行产物（看板/字幕/提示词/质检报告等中间文件）
+examples/*.html
+examples/*.srt
+examples/*.csv
+examples/prompts.json
+examples/validate_report.json
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
