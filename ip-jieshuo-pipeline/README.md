@@ -38,7 +38,7 @@ python tools/jieshuo/board.py examples/vo.json examples/assets.json prompts.json
 
 ```
 ├── SKILL.md               # 前置锁（7道）+ 四阶段 + 三条承诺
-├── README.md / CHANGELOG.md / LICENSE(MIT)
+├── README.md / LICENSE(MIT)   # 变更记录见顶层 CHANGELOG.md
 ├── references/            # 4 个规则文件
 │   ├── vo-format.md        # 旁白稿字段规范 + 语速校验
 │   ├── asset-match.md      # 素材匹配表 + 版权分级

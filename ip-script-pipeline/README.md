@@ -73,13 +73,14 @@ ip-script-pipeline/
 │   ├── stage-a.md                #   六阶段编剧链逐步 prompt 要点
 │   ├── stage-b.md                #   阶段 B 先导片浓缩（钩子来源分流 + 底牌留白）
 │   ├── stage-c.md                #   阶段 C 分集剧本（揭示边界硬前置 + 机械检查）
+│   ├── benchmark.md              #   对标情报搜集（阶段 0 前置输入）
 │   ├── overseas-adapter.md       #   海外剧英文对白适配层（赛道②）
 │   ├── jieshuo-script.md         #   解说叙事旁白稿剧本链（赛道③）
 │   ├── packages.md               #   门禁字段清单（评估报告 + 三个 package）
 │   ├── economy.md                #   模型分层表 + 上下文隔离清单
 │   ├── quality-modules.md        #   底牌分层 + 钩子纪律 + 台词诊断 + 情绪节拍
 │   └── make-spec.md              #   制作层规范（人物定妆单/简介单/资产清单）
-└── CHANGELOG.md                  #   变更记录
+└── LICENSE                       #   独立分发单元所需（变更记录见顶层 CHANGELOG.md）
 ```
 
 ---
